@@ -1,11 +1,12 @@
 {
-  "name": "server",
+  "name": "notebridge",
   "version": "1.0.0",
-  "description": "",
+  "description": "NoteBridge \u2013 full-stack MERN social platform with real-time messaging",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
     "server": "nodemon server.js",
+    "client": "npm start --prefix client",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "",
